@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-effects {
+    position: relative;
+}
+
+.image-effects img {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.image-effects img.fadeeffect {
+    opacity: 1;
+}
+
+#checkbox {
+    display: none;
+}
+
+.switch {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(71, 76, 80);
+    border: 3px double;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch #icon{
+    fill: rgb(48, 48, 48);
+}
+
+#checkbox:checked+.switch {
+    box-shadow: 0px 0px 2px rgb(151, 243, 255), 0px 0px 40px rgb(151, 243, 255), 0px 0px 5px rgb(151, 243, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(146, 180, 184);
+}
